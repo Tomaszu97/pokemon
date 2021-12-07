@@ -1,0 +1,178 @@
+/*
+ * Graphviz of '<_io.TextIOWrapper name='<stdin>' mode='r' encoding='utf-8'>', created 2021-12-07 18:19:46.015299
+ * Generated from https://github.com/rm-hull/sql_graphviz
+ */
+digraph g { graph [ rankdir = "LR", splines="ortho" ];
+    nodesep=0.1;
+
+    "gatunki" [
+    shape=none
+    label=<
+      <table border="0" cellspacing="0" cellborder="1">
+        <tr><td bgcolor="lightblue2" colspan="2"><font face="Times-bold" point-size="20"> gatunki </font></td></tr>
+        <tr><td bgcolor="grey96" align="left" port="gatunek_id"><font face="Times-bold"> gatunek_id </font></td><td align="left" port="gatunek_id_right"><font color="#535353"> integer NOT NULL PRIMARY KEY AUTOINCREMENT </font></td></tr>
+        <tr><td bgcolor="grey96" align="left" port="nazwa"><font face="Times-bold"> nazwa </font></td><td align="left" port="nazwa_right"><font color="#535353"> varchar (255) NOT NULL </font></td></tr>
+        <tr><td bgcolor="grey96" align="left" port="typ"><font face="Times-bold"> typ </font></td><td align="left" port="typ_right"><font color="#535353"> integer NOT NULL </font></td></tr>
+        <tr><td bgcolor="grey96" align="left" port="typ_2"><font face="Times-bold"> typ_2 </font></td><td align="left" port="typ_2_right"><font color="#535353"> integer DEFAULT NULL </font></td></tr>
+        <tr><td bgcolor="grey96" align="left" port="hp"><font face="Times-bold"> hp </font></td><td align="left" port="hp_right"><font color="#535353"> integer NOT NULL </font></td></tr>
+        <tr><td bgcolor="grey96" align="left" port="atak"><font face="Times-bold"> atak </font></td><td align="left" port="atak_right"><font color="#535353"> integer NOT NULL </font></td></tr>
+        <tr><td bgcolor="grey96" align="left" port="obrona"><font face="Times-bold"> obrona </font></td><td align="left" port="obrona_right"><font color="#535353"> integer NOT NULL </font></td></tr>
+        <tr><td bgcolor="grey96" align="left" port="szybkosc"><font face="Times-bold"> szybkosc </font></td><td align="left" port="szybkosc_right"><font color="#535353"> integer NOT NULL </font></td></tr>
+        <tr><td bgcolor="grey96" align="left" port="legendarny"><font face="Times-bold"> legendarny </font></td><td align="left" port="legendarny_right"><font color="#535353"> integer NOT NULL </font></td></tr>
+        <tr><td bgcolor="grey96" align="left" port="ewoluuje_w"><font face="Times-bold"> ewoluuje_w </font></td><td align="left" port="ewoluuje_w_right"><font color="#535353"> integer DEFAULT NULL </font></td></tr>
+      </table>
+    >];
+
+
+    "gatunki_regiony" [
+    shape=none
+    label=<
+      <table border="0" cellspacing="0" cellborder="1">
+        <tr><td bgcolor="lightblue2" colspan="2"><font face="Times-bold" point-size="20"> gatunki_regiony </font></td></tr>
+        <tr><td bgcolor="grey96" align="left" port="gatunek_id"><font face="Times-bold"> gatunek_id </font></td><td align="left" port="gatunek_id_right"><font color="#535353"> integer NOT NULL </font></td></tr>
+        <tr><td bgcolor="grey96" align="left" port="region_id"><font face="Times-bold"> region_id </font></td><td align="left" port="region_id_right"><font color="#535353"> integer NOT NULL </font></td></tr>
+      </table>
+    >];
+
+    "gatunki_umiejetnosci" [
+    shape=none
+    label=<
+      <table border="0" cellspacing="0" cellborder="1">
+        <tr><td bgcolor="lightblue2" colspan="2"><font face="Times-bold" point-size="20"> gatunki_umiejetnosci </font></td></tr>
+        <tr><td bgcolor="grey96" align="left" port="gatunek_id"><font face="Times-bold"> gatunek_id </font></td><td align="left" port="gatunek_id_right"><font color="#535353"> integer NOT NULL </font></td></tr>
+        <tr><td bgcolor="grey96" align="left" port="umiejetnosc_id"><font face="Times-bold"> umiejetnosc_id </font></td><td align="left" port="umiejetnosc_id_right"><font color="#535353"> integer NOT NULL </font></td></tr>
+      </table>
+    >];
+
+    "gymy" [
+    shape=none
+    label=<
+      <table border="0" cellspacing="0" cellborder="1">
+        <tr><td bgcolor="lightblue2" colspan="2"><font face="Times-bold" point-size="20"> gymy </font></td></tr>
+        <tr><td bgcolor="grey96" align="left" port="gym_id"><font face="Times-bold"> gym_id </font></td><td align="left" port="gym_id_right"><font color="#535353"> integer NOT NULL PRIMARY KEY AUTOINCREMENT </font></td></tr>
+        <tr><td bgcolor="grey96" align="left" port="miasto_id"><font face="Times-bold"> miasto_id </font></td><td align="left" port="miasto_id_right"><font color="#535353"> integer NOT NULL </font></td></tr>
+        <tr><td bgcolor="grey96" align="left" port="nazwa"><font face="Times-bold"> nazwa </font></td><td align="left" port="nazwa_right"><font color="#535353"> varchar (255) DEFAULT NULL </font></td></tr>
+      </table>
+    >];
+
+    "miasta" [
+    shape=none
+    label=<
+      <table border="0" cellspacing="0" cellborder="1">
+        <tr><td bgcolor="lightblue2" colspan="2"><font face="Times-bold" point-size="20"> miasta </font></td></tr>
+        <tr><td bgcolor="grey96" align="left" port="miasto_id"><font face="Times-bold"> miasto_id </font></td><td align="left" port="miasto_id_right"><font color="#535353"> integer NOT NULL PRIMARY KEY AUTOINCREMENT </font></td></tr>
+        <tr><td bgcolor="grey96" align="left" port="region_id"><font face="Times-bold"> region_id </font></td><td align="left" port="region_id_right"><font color="#535353"> integer NOT NULL </font></td></tr>
+        <tr><td bgcolor="grey96" align="left" port="nazwa"><font face="Times-bold"> nazwa </font></td><td align="left" port="nazwa_right"><font color="#535353"> varchar (255) DEFAULT NULL </font></td></tr>
+      </table>
+    >];
+
+    "pokemony" [
+    shape=none
+    label=<
+      <table border="0" cellspacing="0" cellborder="1">
+        <tr><td bgcolor="lightblue2" colspan="2"><font face="Times-bold" point-size="20"> pokemony </font></td></tr>
+        <tr><td bgcolor="grey96" align="left" port="pokemon_id"><font face="Times-bold"> pokemon_id </font></td><td align="left" port="pokemon_id_right"><font color="#535353"> integer NOT NULL PRIMARY KEY AUTOINCREMENT </font></td></tr>
+        <tr><td bgcolor="grey96" align="left" port="nazwa"><font face="Times-bold"> nazwa </font></td><td align="left" port="nazwa_right"><font color="#535353"> varchar (255) DEFAULT NULL </font></td></tr>
+        <tr><td bgcolor="grey96" align="left" port="poziom"><font face="Times-bold"> poziom </font></td><td align="left" port="poziom_right"><font color="#535353"> integer NOT NULL </font></td></tr>
+        <tr><td bgcolor="grey96" align="left" port="shiny"><font face="Times-bold"> shiny </font></td><td align="left" port="shiny_right"><font color="#535353"> integer NOT NULL DEFAULT 0 </font></td></tr>
+        <tr><td bgcolor="grey96" align="left" port="gatunek_id"><font face="Times-bold"> gatunek_id </font></td><td align="left" port="gatunek_id_right"><font color="#535353"> integer NOT NULL </font></td></tr>
+        <tr><td bgcolor="grey96" align="left" port="trener_id"><font face="Times-bold"> trener_id </font></td><td align="left" port="trener_id_right"><font color="#535353"> integer DEFAULT NULL </font></td></tr>
+      </table>
+    >];
+
+    "przedmioty" [
+    shape=none
+    label=<
+      <table border="0" cellspacing="0" cellborder="1">
+        <tr><td bgcolor="lightblue2" colspan="2"><font face="Times-bold" point-size="20"> przedmioty </font></td></tr>
+        <tr><td bgcolor="grey96" align="left" port="przedmiot_id"><font face="Times-bold"> przedmiot_id </font></td><td align="left" port="przedmiot_id_right"><font color="#535353"> integer NOT NULL PRIMARY KEY AUTOINCREMENT </font></td></tr>
+        <tr><td bgcolor="grey96" align="left" port="trener_id"><font face="Times-bold"> trener_id </font></td><td align="left" port="trener_id_right"><font color="#535353"> integer DEFAULT NULL </font></td></tr>
+        <tr><td bgcolor="grey96" align="left" port="typ_przedmiotu_id"><font face="Times-bold"> typ_przedmiotu_id </font></td><td align="left" port="typ_przedmiotu_id_right"><font color="#535353"> integer NOT NULL </font></td></tr>
+      </table>
+    >];
+
+    "regiony" [
+    shape=none
+    label=<
+      <table border="0" cellspacing="0" cellborder="1">
+        <tr><td bgcolor="lightblue2" colspan="2"><font face="Times-bold" point-size="20"> regiony </font></td></tr>
+        <tr><td bgcolor="grey96" align="left" port="region_id"><font face="Times-bold"> region_id </font></td><td align="left" port="region_id_right"><font color="#535353"> integer NOT NULL PRIMARY KEY AUTOINCREMENT </font></td></tr>
+        <tr><td bgcolor="grey96" align="left" port="nazwa"><font face="Times-bold"> nazwa </font></td><td align="left" port="nazwa_right"><font color="#535353"> varchar (255) DEFAULT NULL </font></td></tr>
+      </table>
+    >];
+
+    "trenerzy" [
+    shape=none
+    label=<
+      <table border="0" cellspacing="0" cellborder="1">
+        <tr><td bgcolor="lightblue2" colspan="2"><font face="Times-bold" point-size="20"> trenerzy </font></td></tr>
+        <tr><td bgcolor="grey96" align="left" port="trener_id"><font face="Times-bold"> trener_id </font></td><td align="left" port="trener_id_right"><font color="#535353"> integer NOT NULL PRIMARY KEY AUTOINCREMENT </font></td></tr>
+        <tr><td bgcolor="grey96" align="left" port="nick"><font face="Times-bold"> nick </font></td><td align="left" port="nick_right"><font color="#535353"> varchar (255) DEFAULT NULL </font></td></tr>
+        <tr><td bgcolor="grey96" align="left" port="gym_id"><font face="Times-bold"> gym_id </font></td><td align="left" port="gym_id_right"><font color="#535353"> integer NOT NULL </font></td></tr>
+      </table>
+    >];
+
+    "typy" [
+    shape=none
+    label=<
+      <table border="0" cellspacing="0" cellborder="1">
+        <tr><td bgcolor="lightblue2" colspan="2"><font face="Times-bold" point-size="20"> typy </font></td></tr>
+        <tr><td bgcolor="grey96" align="left" port="typ_id"><font face="Times-bold"> typ_id </font></td><td align="left" port="typ_id_right"><font color="#535353"> integer NOT NULL </font></td></tr>
+        <tr><td bgcolor="grey96" align="left" port="typ"><font face="Times-bold"> typ </font></td><td align="left" port="typ_right"><font color="#535353"> varchar (255) NOT NULL </font></td></tr>
+      </table>
+    >];
+
+    "typy_przedmiotow" [
+    shape=none
+    label=<
+      <table border="0" cellspacing="0" cellborder="1">
+        <tr><td bgcolor="lightblue2" colspan="2"><font face="Times-bold" point-size="20"> typy_przedmiotow </font></td></tr>
+        <tr><td bgcolor="grey96" align="left" port="typ_przedmiotu_id"><font face="Times-bold"> typ_przedmiotu_id </font></td><td align="left" port="typ_przedmiotu_id_right"><font color="#535353"> integer NOT NULL PRIMARY KEY AUTOINCREMENT </font></td></tr>
+        <tr><td bgcolor="grey96" align="left" port="nazwa"><font face="Times-bold"> nazwa </font></td><td align="left" port="nazwa_right"><font color="#535353"> varchar (255) NOT NULL </font></td></tr>
+        <tr><td bgcolor="grey96" align="left" port="cena"><font face="Times-bold"> cena </font></td><td align="left" port="cena_right"><font color="#535353"> integer NOT NULL </font></td></tr>
+        <tr><td bgcolor="grey96" align="left" port="opis"><font face="Times-bold"> opis </font></td><td align="left" port="opis_right"><font color="#535353"> varchar (255) DEFAULT NULL </font></td></tr>
+      </table>
+    >];
+
+    "umiejetnosci" [
+    shape=none
+    label=<
+      <table border="0" cellspacing="0" cellborder="1">
+        <tr><td bgcolor="lightblue2" colspan="2"><font face="Times-bold" point-size="20"> umiejetnosci </font></td></tr>
+        <tr><td bgcolor="grey96" align="left" port="umiejetnosc_id"><font face="Times-bold"> umiejetnosc_id </font></td><td align="left" port="umiejetnosc_id_right"><font color="#535353"> integer NOT NULL PRIMARY KEY AUTOINCREMENT </font></td></tr>
+        <tr><td bgcolor="grey96" align="left" port="typ"><font face="Times-bold"> typ </font></td><td align="left" port="typ_right"><font color="#535353"> integer DEFAULT NULL </font></td></tr>
+        <tr><td bgcolor="grey96" align="left" port="nazwa"><font face="Times-bold"> nazwa </font></td><td align="left" port="nazwa_right"><font color="#535353"> varchar (255) NOT NULL DEFAULT &#x27;0&#x27; </font></td></tr>
+        <tr><td bgcolor="grey96" align="left" port="opis"><font face="Times-bold"> opis </font></td><td align="left" port="opis_right"><font color="#535353"> varchar (512) DEFAULT NULL </font></td></tr>
+      </table>
+    >];
+
+    "walki" [
+    shape=none
+    label=<
+      <table border="0" cellspacing="0" cellborder="1">
+        <tr><td bgcolor="lightblue2" colspan="2"><font face="Times-bold" point-size="20"> walki </font></td></tr>
+        <tr><td bgcolor="grey96" align="left" port="walka_id"><font face="Times-bold"> walka_id </font></td><td align="left" port="walka_id_right"><font color="#535353"> integer NOT NULL PRIMARY KEY AUTOINCREMENT </font></td></tr>
+        <tr><td bgcolor="grey96" align="left" port="data"><font face="Times-bold"> data </font></td><td align="left" port="data_right"><font color="#535353"> date NOT NULL </font></td></tr>
+        <tr><td bgcolor="grey96" align="left" port="zwyciezca"><font face="Times-bold"> zwyciezca </font></td><td align="left" port="zwyciezca_right"><font color="#535353"> integer DEFAULT NULL </font></td></tr>
+        <tr><td bgcolor="grey96" align="left" port="punkty"><font face="Times-bold"> punkty </font></td><td align="left" port="punkty_right"><font color="#535353"> integer DEFAULT NULL </font></td></tr>
+        <tr><td bgcolor="grey96" align="left" port="pokemon_id_1"><font face="Times-bold"> pokemon_id_1 </font></td><td align="left" port="pokemon_id_1_right"><font color="#535353"> integer NOT NULL </font></td></tr>
+        <tr><td bgcolor="grey96" align="left" port="pokemon_id_2"><font face="Times-bold"> pokemon_id_2 </font></td><td align="left" port="pokemon_id_2_right"><font color="#535353"> integer NOT NULL </font></td></tr>
+      </table>
+    >];
+
+    "typy_przedmiotow" -> "przedmioty"       [ dir=both, taillabel="\n 1 \n", headlabel="\n 0..* \n", arrowtail="tee", arrowhead="invodot", arrowsize="1.5" ]
+    "przedmioty" -> "trenerzy"               [ dir=both, taillabel="\n 0..* \n", headlabel="\n 0..1 \n", arrowtail="invodot", arrowhead="teeodot", arrowsize="1.5" ]
+    "trenerzy" -> "pokemony"                 [ dir=both, taillabel="\n 0..1 \n", headlabel="\n 0..* \n", arrowtail="teeodot", arrowhead="invodot", arrowsize="1.5" ]
+    "trenerzy" -> "gymy"                     [ dir=both, taillabel="\n 0..* \n", headlabel="\n 1 \n", arrowtail="invodot", arrowhead="tee", arrowsize="1.5" ]
+    "pokemony" -> "gatunki"                  [ dir=both, taillabel="\n 0..* \n", headlabel="\n 1 \n", arrowtail="invodot", arrowhead="tee", arrowsize="1.5" ]
+    "pokemony" -> "walki"                    [ dir=both, taillabel="\n 0..* \n", headlabel="\n 1 \n", arrowtail="invodot", arrowhead="tee", arrowsize="1.5" ]
+    "pokemony" -> "walki"                    [ dir=both, taillabel="\n 1 \n", headlabel="\n 0..* \n", arrowtail="tee", arrowhead="invodot", arrowsize="1.5" ]
+    "gymy" -> "miasta"                       [ dir=both, taillabel="\n 0..* \n", headlabel="\n 1 \n", arrowtail="invodot", arrowhead="tee", arrowsize="1.5" ]
+    "miasta" -> "regiony"                    [ dir=both, taillabel="\n 0..* \n", headlabel="\n 1 \n", arrowtail="invodot", arrowhead="tee", arrowsize="1.5" ]
+    "regiony" -> "gatunki_regiony"           [ dir=both, taillabel="\n 1 \n", headlabel="\n 0..* \n", arrowtail="tee", arrowhead="invodot", arrowsize="1.5" ]
+    "gatunki_regiony" -> "gatunki"           [ dir=both, taillabel="\n 0..* \n", headlabel="\n 1 \n", arrowtail="invodot", arrowhead="tee", arrowsize="1.5" ]
+    "gatunki" -> "gatunki"                   [ dir=both, taillabel="\n 0..1 \n", headlabel="\n 0..1 \n", arrowtail="teeodot", arrowhead="teeodot", arrowsize="1.5" ]
+    "gatunki" -> "gatunki_umiejetnosci"      [ dir=both, taillabel="\n 1 \n", headlabel="\n 0..* \n", arrowtail="tee", arrowhead="invodot", arrowsize="1.5" ]
+    "gatunki_umiejetnosci" -> "umiejetnosci" [ dir=both, taillabel="\n 0..* \n", headlabel="\n 1 \n", arrowtail="invodot", arrowhead="tee", arrowsize="1.5" ]
+
+}
