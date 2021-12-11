@@ -344,13 +344,13 @@
 <!-- pokemony&#45;&gt;walki -->
 <g id="edge6" class="edge">
 <title>pokemony&#45;&gt;walki</title>
-<path fill="none" stroke="black" d="M2494.32,-573.9C2494.32,-573.9 2494.32,-169.7 2494.32,-169.7"/>
-<polygon fill="black" stroke="black" points="2499.57,-162.2 2494.32,-177.2 2489.07,-162.2 2499.57,-162.2"/>
-<ellipse fill="none" stroke="black" cx="2494.32" cy="-183.2" rx="6" ry="6"/>
-<polygon fill="black" stroke="black" points="2501.82,-599.4 2486.82,-599.4 2486.82,-596.4 2501.82,-596.4 2501.82,-599.4"/>
-<polyline fill="none" stroke="black" points="2494.32,-600.9 2494.32,-593.4 "/>
-<text text-anchor="middle" x="2484.82" y="-573.7" font-family="Times,serif" font-size="14.00"> 1 </text>
-<text text-anchor="middle" x="2477.32" y="-166" font-family="Times,serif" font-size="14.00"> 0..* </text>
+<path fill="none" stroke="black" d="M2494.32,-593.4C2494.32,-593.4 2494.32,-189.2 2494.32,-189.2"/>
+<polygon fill="black" stroke="black" points="2486.82,-163.7 2501.82,-163.7 2501.82,-166.7 2486.82,-166.7 2486.82,-163.7"/>
+<polyline fill="none" stroke="black" points="2494.32,-162.2 2494.32,-169.7 "/>
+<polygon fill="black" stroke="black" points="2489.07,-600.9 2494.32,-585.9 2499.57,-600.9 2489.07,-600.9"/>
+<ellipse fill="none" stroke="black" cx="2494.32" cy="-579.9" rx="6" ry="6"/>
+<text text-anchor="middle" x="2477.32" y="-573.7" font-family="Times,serif" font-size="14.00"> 0..* </text>
+<text text-anchor="middle" x="2484.82" y="-166" font-family="Times,serif" font-size="14.00"> 1 </text>
 </g>
 <!-- pokemony&#45;&gt;walki -->
 <g id="edge7" class="edge">
